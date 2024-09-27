@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="650.0" prefWidth="944.0" spacing="10.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QLPController">
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/QuanLyPhong.css" />
+   </stylesheets>
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="936.0">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/avatar_user_1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="containerModule" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

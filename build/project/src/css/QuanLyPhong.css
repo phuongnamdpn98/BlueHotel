@@ -1,0 +1,40 @@
+@import url("variable.css");
+.room{
+	-fx-background-radius: 10px;
+}
+.room--empty{
+	-fx-background-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+}
+.room--busy{
+	-fx-background-radius: 10px;
+	-fx-background-color: #8c8c8c;
+}
+
+.txt-room{
+	-fx-opacity: 1;
+	-fx-fill: white;
+}
+.vbox2{
+	-fx-opacity: 0;
+	-fx-background-color: #00000070;
+	-fx-background-radius: 10px;
+}
+.room:hover{
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 3, 0, 0, 2);
+}
+.room:hover .txt-room{
+	-fx-opacity: 0;
+}
+.room:hover > .vbox2{
+	-fx-opacity: 1;
+}
+
+.background-img {
+    -fx-background-image: url("../imgs/logo_blue_hotel.png");
+    -fx-background-size: cover;
+    -fx-opacity: 0.5;
+}
+
+
+
+

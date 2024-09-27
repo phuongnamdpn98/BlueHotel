@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="673.0" prefWidth="1009.0" spacing="10.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane VBox.vgrow="NEVER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToPhong" prefHeight="35.0" prefWidth="91.0" styleClass="btn-empty" text="Quay lại">
+               <graphic>
+                  <Group>
+                     <children>
+                        <SVGPath content="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="#4659eb" scaleX="0.04" scaleY="0.04" scaleZ="0.0" />
+                     </children>
+                  </Group>
+               </graphic>
+            </Button>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <TabPane fx:id="tabPane_QLDP" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+         <tabs>
+            <Tab text="Thông tin chi tiết">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <GridPane hgap="20.0" maxHeight="566.0" prefHeight="359.0" prefWidth="989.0" vgap="20.0" VBox.vgrow="NEVER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <VBox layoutX="10.0" layoutY="6.0" prefHeight="58.0" prefWidth="472.0" styleClass="field-invisible">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Họ tên khách hàng">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextField fx:id="hoTenKH_QLDP" styleClass="field-invisible_field" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="157.0" prefHeight="58.0" prefWidth="472.0" styleClass="field-invisible" GridPane.rowIndex="1">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Số điện thoại">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextField fx:id="sdt_QLDP" styleClass="field-invisible_field" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="84.0" prefHeight="58.0" prefWidth="472.0" styleClass="field-invisible" GridPane.rowIndex="2">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Email">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextField fx:id="email_QLDP" styleClass="field-invisible_field" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="232.0" prefHeight="58.0" prefWidth="472.0" styleClass="field-invisible" GridPane.rowIndex="3">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="CCCD khách hàng">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextField fx:id="cccd_QLDP" styleClass="field-invisible_field" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <VBox prefHeight="58.0" prefWidth="472.0" style="-fx-border-width: 0;" styleClass="field-invisible">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Ngày sinh">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <DatePicker fx:id="ngaySinhKH_QLDP" minHeight="30.0" prefHeight="30.0" prefWidth="230.0" promptText="MM/dd/yyyy" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="58.0" prefWidth="473.0" style="-fx-border-width: 0;" styleClass="field-invisible">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Giới tính">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="radioNam_QLDP" mnemonicParsing="false" selected="true" text="Nam">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="gender" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioNu_QLDP" mnemonicParsing="false" text="Nữ" toggleGroup="$gender" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="58.0" prefWidth="472.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Loại khách">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                       <children>
+                                          <ComboBox fx:id="loaiKhach_QLDP" minHeight="30.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #00000000; -fx-border-color: #cccccc; -fx-border-radius: 3;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" styleClass="field-invisible">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Số người" />
+                                          <TextField fx:id="soNguoi_QLDP" styleClass="field-invisible_field" text="1" />
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="field-invisible">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Số phòng" />
+                                          <TextField fx:id="soPhong_QLDP" styleClass="field-invisible_field" text="1" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="58.0" prefWidth="472.0" style="-fx-border-width: 0;" styleClass="field-invisible" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Ngày đặt">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <DatePicker fx:id="ngayDat_QLDP" minHeight="30.0" prefHeight="30.0" prefWidth="230.0" promptText="MM/dd/yyyy" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <VBox prefHeight="58.0" prefWidth="472.0" style="-fx-border-width: 0;" styleClass="field-invisible">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Ngày đến dự kiến">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <DatePicker fx:id="ngayDenDK_QLDP" minHeight="30.0" prefHeight="30.0" prefWidth="230.0" promptText="MM/dd/yyyy" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="58.0" prefWidth="472.0" style="-fx-border-width: 0;" styleClass="field-invisible">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-invisible_label" text="Ngày đi dự kiến">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <DatePicker fx:id="ngayDiDK_QLDP" minHeight="30.0" prefHeight="30.0" prefWidth="230.0" promptText="MM/dd/yyyy" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="999.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnClearForm_QLDP" layoutX="146.0" layoutY="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="96.0" styleClass="btn-empty" text="Reset form" />
+                              <Button fx:id="btnThemKH_QLDP" layoutX="204.0" layoutY="18.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="btn-empty" text="Thêm khách hàng" />
+                              <Button fx:id="btnXoaPhieuDat_QLDP" layoutX="215.0" layoutY="18.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="btn-empty" text="Xóa phiếu" />
+                              <Button fx:id="btnThemPhieuDat_QLDP" layoutX="340.0" layoutY="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" styleClass="btn-fill" text="Thêm phiếu" />
+                           </children>
+                           <padding>
+                              <Insets right="15.0" />
+                           </padding>
+                        </HBox>
+                        <Pane fx:id="background_QLDP" prefHeight="47.0" prefWidth="999.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Danh sách khách hàng">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1010.0">
+                           <children>
+                              <TextField fx:id="searchKhachHang_QLDP" prefHeight="35.0" prefWidth="394.0" promptText="Tìm khách hàng" styleClass="search-bar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tableKhachHang_QLDP" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Khách đặt trước">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1010.0" VBox.vgrow="NEVER">
+                           <children>
+                              <TextField fx:id="searchKhachDatTruoc_QLDP" prefHeight="35.0" prefWidth="394.0" promptText="Tìm khách hàng" styleClass="search-bar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tableKhachDatTruoc_QLDP" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</VBox>

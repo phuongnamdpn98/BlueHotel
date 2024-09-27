@@ -1,0 +1,234 @@
+@import url("variable.css");
+.main-frame{
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+	-fx-pref-width: 1200.0px;
+	-fx-pref-height: 700.0px;
+}
+
+.btn-fill{
+	-fx-background-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+	-fx-background-radius: 20.0px;
+	-fx-text-fill: #ffffff;
+	
+}
+.btn-fill:hover{
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.4), 2.0, 0.0, 0.0, 1.0);
+	-fx-translate-y: -2.0px;
+}
+.btn-fill:pressed{
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.0), 2.0, 0.0, 0.0, 1.0);
+	-fx-background-color: -accent-color-dark;
+	-fx-translate-y: 0.0px;
+}
+.btn-empty{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 20.0px;
+	
+	-fx-border-radius: 20.0px;
+	-fx-text-fill: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+}
+.btn-empty:hover{
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.4), 2.0, 0.0, 0.0, 1.0);
+	-fx-translate-y: -2.0px;
+}
+.btn-empty:pressed{
+	-fx-background-color: linear-gradient(to right, -accent-color-dark, -accent-color-light);
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.0), 3.0, 0.0, 0.0, 1.0);
+	-fx-border-color: rgba(0.0,0.0,0.0,0.0);
+	-fx-text-fill: #ffffff;
+}
+
+.btn-solid{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 20.0px;
+	-fx-border-radius: 20.0px;
+	-fx-text-fill: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+}
+.btn-solid:hover{	
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.4), 2.0, 0.0, 0.0, 1.0);
+}
+.btn-solid:pressed{
+	-fx-background-color: #cccccc;
+}
+
+.btn-circle{
+	-fx-background-color: #eeeeee90;
+	-fx-text-fill: black;
+	-fx-background-radius: 50px;
+}
+.btn-circle:hover{
+	-fx-background-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+	-fx-text-fill: white;
+}
+
+.btn-fill, .btn-empty, .btn-solid, .navbar-btn, .btn-cirle{
+	-fx-cursor: hand;
+}
+
+.navbar-btn{
+	-fx-pref-width: 200.0px;
+	-fx-alignment: CENTER_LEFT;
+	-fx-padding: 0.0 25.0px 0.0 40.0px;
+	-fx-text-fill: #ffffff; 
+	-fx-background-color: rgba(0.0,0.0,0.0,0.0);
+	-fx-background-radius: 0 20px 20px 0;
+	-fx-translate-x: -10.0px;
+}
+.navbar-btn:hover{
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.4), 2.0, 0.0, 0.0, 1.0);
+}
+.navbar-btn.active{
+	-fx-text-fill: #000000; 
+	-fx-background-color: #ffffff;
+}
+
+.room-empty{
+	-fx-background-color: green;	
+}
+.room-broke{
+	-fx-background-color: red;
+}
+
+.side_anker{
+	-fx-background-color: linear-gradient(to bottom, -accent-color-light, -accent-color-dark);
+	-fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.3), 10.0, 0.0, 1.0, 0.0);
+	-fx-background-radius: 0 10px 10px 0;
+}
+.search-bar{
+	-fx-pref-width: 300.0px;
+	-fx-min-height: 35.0px;
+	-fx-border-radius: 5.0px;
+	-fx-border-color: #00000050;
+	-fx-background-color: rgba(0.0, 0.0, 0.0, 0.0);
+}
+.search-bar:hover{
+	-fx-border-color: #00000080;
+}
+.label-field{
+	-fx-fill: #626262;
+}
+.txt-field{
+	-fx-min-height: 35.0px;
+	-fx-border-radius: 5.0px;
+	-fx-border-color: #00000060;
+	-fx-background-color: rgba(0.0, 0.0, 0.0, 0.0);
+}
+.txt-field:hover{
+	-fx-border-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+	-fx-effect: dropshadow(gaussian, rgba(48.0, 165.0, 232.0, 0.3), 3.0, 0.0, 0.0, 0.0);
+}
+
+/*invisible field */
+.field-invisible{
+	-fx-border-color: #00000050;
+	-fx-border-radius: 7.0px;
+	-fx-padding: 5.0px 5.0px 2.0px 5.0px;
+}
+.field-invisible:hover{
+	-fx-border-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+	-fx-effect: dropshadow(gaussian, rgba(48.0, 165.0, 232.0, 0.3), 3.0, 0.0, 0.0, 0.0);
+}
+.field-invisible_label{
+	-fx-fill: #00000090;
+}
+.field-invisible_field{
+	-fx-border-color: transparent;
+	-fx-background-color: transparent;
+	-fx-min-height: 30.0px;
+	-fx-padding: 0.0;
+	-fx-font-size: 14.0px;
+}
+
+.scroll-pane {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: transparent;     
+    -fx-border-color: transparent;        
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;     /* Loại bỏ màu nền của viewport */
+}
+.table-view {
+	-fx-border-color: transparent;
+	-fx-background-color: transparent; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .table-button:hover{
+	-fx-background-color: transparent;
+}
+.table-view .column-header{
+	-fx-background-color: #ffffff;
+	-fx-pref-height: 35.0px;
+}
+.table-view .column-header .label {
+    -fx-font-weight: normal;
+}
+.table-view .column-header-background {
+    -fx-border-width: 0.0 0.0 1.5px 0.0; /* Chỉ định đường viền dưới */
+	-fx-border-color: #cccccc;
+}
+.table-view .column-header-background .filler{
+	-fx-background-color: #ffffff;
+}
+/* Tùy chỉnh thanh cuộn dọc */
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: -gray; /* Màu nền của thanh cuộn */
+    -fx-background-radius: 20.0px;
+}
+
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #ffffff; /* Màu nền của track */
+}
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: -gray; /* Màu nền của nút tăng giảm */
+}
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff;
+}
+.table-view .table-row-cell:hover {
+    -fx-background-color: linear-gradient(to right, -accent-color-light-85, -accent-color-dark-85);
+}
+.table-view .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+}
+
+.tab-pane{
+	
+}
+.tab-pane .tab-header-area {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+/* Chỉnh sửa từng thẻ tab */
+.tab-pane .tab {
+    -fx-border-width: 0.0; /* Độ dày viền của tab */
+    -fx-background-color: #00000008; /* Màu nền của tab khi không được chọn */
+    -fx-padding: 5.0 20.0 5.0 10.0;      /* Khoảng đệm bên trong của tab */
+    -fx-background-radius: 20.0px;
+    -fx-background-insets: 0.0 10.0px 0.0 0; /* Khoảng cách giữa các tab */
+    
+}
+/* Chỉnh sửa nhãn của tab */
+.tab-pane .tab-label {
+    -fx-text-fill: #333333;        /* Màu chữ của tab */
+    -fx-font-size: 12.0px;           /* Kích thước chữ của tab */
+    -fx-border-width: 0.0;
+}
+
+/* Chỉnh sửa thẻ tab khi được chọn */
+.tab-pane .tab:selected {
+	-fx-background-color: linear-gradient(to right, -accent-color-light, -accent-color-dark);
+    -fx-border-color: #cccccc;     /* Màu viền của tab khi được chọn */
+	-fx-focus-color: transparent;  /* Loại bỏ màu viền focus */
+    -fx-faint-focus-color: transparent; /* Loại bỏ màu viền focus mờ */
+}
+.tab-pane .tab:selected .tab-label{
+	-fx-text-fill: #ffffff;
+}
+
+

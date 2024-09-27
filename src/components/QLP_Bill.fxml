@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1044.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="44.0" prefWidth="943.0">
+         <children>
+            <Button fx:id="btnQuayLai_Bill" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="btn-empty" text="Quay lại">
+               <graphic>
+                  <Group>
+                     <children>
+                        <SVGPath content="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="#4659eb" scaleX="0.04" scaleY="0.04" scaleZ="0.0" />
+                     </children>
+                  </Group>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="389.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M 310.410156 165.5625 L 206.558594 165.5625 L 206.558594 136.382812 C 207.1875 132.214844 207.523438 127.96875 207.523438 123.679688 C 207.523438 119.289062 207.195312 114.949219 206.558594 110.6875 L 206.558594 37.605469 L 198.191406 37.605469 L 198.191406 84.515625 C 194.140625 76.574219 188.835938 69.238281 182.359375 62.761719 C 178.851562 59.253906 175.09375 56.09375 171.117188 53.28125 L 171.117188 37.605469 L 162.75 37.605469 L 162.75 48.066406 C 150.257812 41.242188 136.144531 37.605469 121.449219 37.605469 L 20.800781 37.605469 L 20.800781 45.972656 L 121.449219 45.972656 C 164.296875 45.972656 199.164062 80.828125 199.164062 123.6875 C 199.164062 146.007812 189.347656 167.125 172.167969 181.882812 C 163.871094 175.789062 154.511719 171.378906 144.242188 168.707031 C 161.160156 160.332031 172.097656 143.039062 172.097656 123.6875 C 172.097656 95.757812 149.375 73.046875 121.457031 73.046875 L 20.800781 73.046875 L 20.800781 337.324219 L 29.167969 337.324219 L 29.167969 209.363281 L 56.234375 209.363281 L 56.234375 337.324219 L 121.441406 337.324219 C 136.144531 337.324219 150.257812 333.726562 162.757812 326.957031 L 162.757812 337.324219 L 171.125 337.324219 L 171.125 321.777344 C 175.09375 318.988281 178.859375 315.847656 182.359375 312.367188 C 188.835938 305.933594 194.140625 298.632812 198.191406 290.71875 L 198.191406 337.324219 L 206.558594 337.324219 L 206.558594 264.617188 C 207.195312 260.363281 207.523438 256.03125 207.523438 251.640625 C 207.523438 247.296875 207.195312 242.992188 206.558594 238.757812 L 206.558594 209.363281 L 310.402344 209.363281 L 310.402344 337.324219 L 318.769531 337.324219 L 318.769531 37.605469 L 310.402344 37.605469 L 310.402344 165.5625 Z M 198.199219 162.246094 L 198.199219 165.5625 L 196.386719 165.5625 C 197.011719 164.476562 197.613281 163.367188 198.199219 162.246094 Z M 64.601562 81.40625 L 121.449219 81.40625 C 144.757812 81.40625 163.722656 100.367188 163.722656 123.679688 C 163.722656 146 145.824219 164.390625 122.96875 165.5625 L 64.601562 165.5625 Z M 29.167969 81.40625 L 56.234375 81.40625 L 56.234375 165.570312 L 29.167969 165.570312 Z M 121.449219 328.960938 L 64.601562 328.960938 L 64.601562 301.890625 L 121.449219 301.890625 C 135.007812 301.890625 147.726562 296.699219 157.257812 287.273438 C 166.828125 277.816406 172.089844 265.164062 172.089844 251.640625 C 172.089844 223.714844 149.367188 201.003906 121.449219 201.003906 L 29.167969 201.003906 L 29.167969 173.933594 L 123.375 173.933594 C 165.164062 174.703125 199.15625 209.5625 199.15625 251.648438 C 199.15625 294.277344 164.296875 328.960938 121.449219 328.960938 Z M 64.601562 293.523438 L 64.601562 209.363281 L 121.449219 209.363281 C 144.757812 209.363281 163.722656 228.324219 163.722656 251.636719 C 163.722656 274.730469 144.757812 293.519531 121.449219 293.519531 L 64.601562 293.519531 Z M 196.542969 209.363281 L 198.199219 209.363281 L 198.199219 212.464844 C 197.664062 211.421875 197.109375 210.390625 196.542969 209.363281 Z M 310.410156 201.003906 L 191.230469 201.003906 C 187.621094 195.980469 183.453125 191.308594 178.773438 187.097656 C 183.316406 183.105469 187.375 178.6875 190.910156 173.933594 L 310.402344 173.933594 L 310.402344 201.003906 Z M 354.207031 37.605469 L 354.207031 337.324219 L 345.84375 337.324219 L 345.84375 37.605469 Z M 354.207031 37.605469" scaleX="0.28" scaleY="0.28" strokeWidth="1.5">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006729475100942127">
+                                             <color>
+                                                <Color red="0.1882352977991104" green="0.6470588445663452" blue="0.9098039269447327" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.27450981736183167" green="0.3490196168422699" blue="0.9215686321258545" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                                 <stroke>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006729475100942127">
+                                             <color>
+                                                <Color red="0.1882352977991104" green="0.6470588445663452" blue="0.9098039269447327" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.5146341463414633">
+                                             <color>
+                                                <Color red="0.2759999930858612" green="0.3511333465576172" blue="0.9200000166893005" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.27450981736183167" green="0.3490196168422699" blue="0.9215686321258545" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </stroke>
+                              </SVGPath>
+                           </children>
+                        </Group>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Hotel">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Text>
+                              <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue company">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotline" />
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0485734921" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Công Viên Phần Mềm Quang Trung" />
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Lô 3 đường 16, Tân Chánh Hiệp, QUận 12" />
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Hồ Chí Minh, Việt Nam" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="134.0" prefWidth="983.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã phòng">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtMaPhong_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="00000000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phòng">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtTenPhong_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="phòng số 000000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="60.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại phòng">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtLoaiPhong_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng vip">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên khách hàng">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtTenKH_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyen Van A">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtNgaySinhKH_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="22/01/1999">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="60.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtSdtKH_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="1234567890">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày đến">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtNgayDen_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="20/07/2024">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày đi">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtNgayDi_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="23/07/2024">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="92.0" prefHeight="200.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fill="#173aff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtThanhTienTop_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="0 ₫">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-border-width: 2px 0 0 0; -fx-border-color: #173aff;" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tableProducts_Bill" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Hình" />
+                      <TableColumn prefWidth="75.0" text="Tên sản phẩm" />
+                        <TableColumn prefWidth="75.0" text="Đơn giá" />
+                        <TableColumn prefWidth="75.0" text="Số lượng" />
+                        <TableColumn prefWidth="75.0" text="Tổng tiền" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <HBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="962.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0">
+                           <children>
+                              <Text fill="#173aff" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng tiền sản phẩm" />
+                              <Text fill="#173aff" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiền phòng" />
+                              <Text fill="#173aff" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_RIGHT" prefHeight="37.0" prefWidth="82.0">
+                           <children>
+                              <Text fx:id="txtTongTienSP_Bill" layoutX="42.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 ₫" />
+                              <Text fx:id="txtTienPhong_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="0 ₫" />
+                              <Text fx:id="txtThanhTienBottom_Bill" strokeType="OUTSIDE" strokeWidth="0.0" text="0 ₫">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="962.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Button fx:id="btnThanhToan_Bill" maxHeight="35.0" minHeight="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" styleClass="btn-fill" text="Thanh toán" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" />
+   </padding>
+</VBox>

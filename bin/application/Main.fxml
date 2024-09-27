@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="main-frame" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox prefHeight="650.0" prefWidth="221.0" styleClass="side_anker" HBox.hgrow="NEVER">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="205.0">
+               <children>
+                  <Group layoutX="-77.0" layoutY="-98.0">
+                     <children>
+                        <SVGPath content="M 310.410156 165.5625 L 206.558594 165.5625 L 206.558594 136.382812 C 207.1875 132.214844 207.523438 127.96875 207.523438 123.679688 C 207.523438 119.289062 207.195312 114.949219 206.558594 110.6875 L 206.558594 37.605469 L 198.191406 37.605469 L 198.191406 84.515625 C 194.140625 76.574219 188.835938 69.238281 182.359375 62.761719 C 178.851562 59.253906 175.09375 56.09375 171.117188 53.28125 L 171.117188 37.605469 L 162.75 37.605469 L 162.75 48.066406 C 150.257812 41.242188 136.144531 37.605469 121.449219 37.605469 L 20.800781 37.605469 L 20.800781 45.972656 L 121.449219 45.972656 C 164.296875 45.972656 199.164062 80.828125 199.164062 123.6875 C 199.164062 146.007812 189.347656 167.125 172.167969 181.882812 C 163.871094 175.789062 154.511719 171.378906 144.242188 168.707031 C 161.160156 160.332031 172.097656 143.039062 172.097656 123.6875 C 172.097656 95.757812 149.375 73.046875 121.457031 73.046875 L 20.800781 73.046875 L 20.800781 337.324219 L 29.167969 337.324219 L 29.167969 209.363281 L 56.234375 209.363281 L 56.234375 337.324219 L 121.441406 337.324219 C 136.144531 337.324219 150.257812 333.726562 162.757812 326.957031 L 162.757812 337.324219 L 171.125 337.324219 L 171.125 321.777344 C 175.09375 318.988281 178.859375 315.847656 182.359375 312.367188 C 188.835938 305.933594 194.140625 298.632812 198.191406 290.71875 L 198.191406 337.324219 L 206.558594 337.324219 L 206.558594 264.617188 C 207.195312 260.363281 207.523438 256.03125 207.523438 251.640625 C 207.523438 247.296875 207.195312 242.992188 206.558594 238.757812 L 206.558594 209.363281 L 310.402344 209.363281 L 310.402344 337.324219 L 318.769531 337.324219 L 318.769531 37.605469 L 310.402344 37.605469 L 310.402344 165.5625 Z M 198.199219 162.246094 L 198.199219 165.5625 L 196.386719 165.5625 C 197.011719 164.476562 197.613281 163.367188 198.199219 162.246094 Z M 64.601562 81.40625 L 121.449219 81.40625 C 144.757812 81.40625 163.722656 100.367188 163.722656 123.679688 C 163.722656 146 145.824219 164.390625 122.96875 165.5625 L 64.601562 165.5625 Z M 29.167969 81.40625 L 56.234375 81.40625 L 56.234375 165.570312 L 29.167969 165.570312 Z M 121.449219 328.960938 L 64.601562 328.960938 L 64.601562 301.890625 L 121.449219 301.890625 C 135.007812 301.890625 147.726562 296.699219 157.257812 287.273438 C 166.828125 277.816406 172.089844 265.164062 172.089844 251.640625 C 172.089844 223.714844 149.367188 201.003906 121.449219 201.003906 L 29.167969 201.003906 L 29.167969 173.933594 L 123.375 173.933594 C 165.164062 174.703125 199.15625 209.5625 199.15625 251.648438 C 199.15625 294.277344 164.296875 328.960938 121.449219 328.960938 Z M 64.601562 293.523438 L 64.601562 209.363281 L 121.449219 209.363281 C 144.757812 209.363281 163.722656 228.324219 163.722656 251.636719 C 163.722656 274.730469 144.757812 293.519531 121.449219 293.519531 L 64.601562 293.519531 Z M 196.542969 209.363281 L 198.199219 209.363281 L 198.199219 212.464844 C 197.664062 211.421875 197.109375 210.390625 196.542969 209.363281 Z M 310.410156 201.003906 L 191.230469 201.003906 C 187.621094 195.980469 183.453125 191.308594 178.773438 187.097656 C 183.316406 183.105469 187.375 178.6875 190.910156 173.933594 L 310.402344 173.933594 L 310.402344 201.003906 Z M 354.207031 37.605469 L 354.207031 337.324219 L 345.84375 337.324219 L 345.84375 37.605469 Z M 354.207031 37.605469" fill="WHITE" scaleX="0.32" scaleY="0.32" />
+                     </children>
+                  </Group>
+               </children>
+            </Pane>
+            <GridPane fx:id="navbar" prefHeight="350.0" prefWidth="222.0" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                        </Group>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý phòng" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="navbar-btn" />
+                        <String fx:value="active" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="1">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7l131.7 0c0 0 0 0 .1 0l5.5 0 112 0 5.5 0c0 0 0 0 .1 0l131.7 0c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2L224 304l-19.7 0c-12.4 0-20.1 13.6-13.7 24.2z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="3.0" right="3.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý nhân viên" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="52.0" prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="2">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý khách hàng" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="93.0" prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="3">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L80 128c-8.8 0-16-7.2-16-16s7.2-16 16-16l368 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L64 32zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý thanh toán" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="135.0" prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="4">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M160 0c-23.7 0-44.4 12.9-55.4 32L48 32C21.5 32 0 53.5 0 80L0 400c0 26.5 21.5 48 48 48l144 0 0-272c0-44.2 35.8-80 80-80l48 0 0-16c0-26.5-21.5-48-48-48l-56.6 0C204.4 12.9 183.7 0 160 0zM272 128c-26.5 0-48 21.5-48 48l0 272 0 16c0 26.5 21.5 48 48 48l192 0c26.5 0 48-21.5 48-48l0-220.1c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1L320 128l-48 0zM160 40a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Thống kê báo cáo" />
+                     </children>
+                  </HBox>
+                  <HBox opacity="0.0" prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="5">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M160 0c-23.7 0-44.4 12.9-55.4 32L48 32C21.5 32 0 53.5 0 80L0 400c0 26.5 21.5 48 48 48l144 0 0-272c0-44.2 35.8-80 80-80l48 0 0-16c0-26.5-21.5-48-48-48l-56.6 0C204.4 12.9 183.7 0 160 0zM272 128c-26.5 0-48 21.5-48 48l0 272 0 16c0 26.5 21.5 48 48 48l192 0c26.5 0 48-21.5 48-48l0-220.1c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1L320 128l-48 0zM160 40a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Thống kê báo cáo" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="177.0" prefHeight="28.0" prefWidth="222.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="6">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="3.0" right="2.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin tài khoản" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="230.0" prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="7">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="3.0" right="1.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Đăng xuất" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="272.0" prefHeight="469.0" prefWidth="619.0" spacing="10.0" styleClass="navbar-btn" GridPane.rowIndex="8">
+                     <children>
+                        <Group>
+                           <children>
+                              <SVGPath content="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 224c0 17.7 14.3 32 32 32s32-14.3 32-32l0-224zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z" fill="WHITE" scaleX="0.04" scaleY="0.04" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="3.0" right="1.0" />
+                           </HBox.margin>
+                        </Group>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Thoát ứng dụng" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </GridPane>
+            <Pane prefHeight="180.0" prefWidth="222.0">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bản quyền của nhóm 1" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox fx:id="container" prefHeight="650.0" prefWidth="944.0" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/QuanLyPhong.css" />
+   </stylesheets>
+</HBox>

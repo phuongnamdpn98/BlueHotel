@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="650.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.thongKeController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="98.0" prefWidth="934.0" VBox.vgrow="NEVER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="364.0" spacing="10.0">
+               <children>
+                  <StackPane alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="326.0" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/avatar_user_1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="289.0" prefWidth="934.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="98.0" prefWidth="934.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="113.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Doanh Thu">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="98.0" prefWidth="756.0" spacing="10.0">
+                     <children>
+                        <StackPane alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="326.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="59.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Năm">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <ComboBox fx:id="cboNam" onAction="#chooseYear" prefHeight="25.0" prefWidth="102.0" promptText="2024" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <LineChart fx:id="lineChartDoanhThu" VBox.vgrow="NEVER">
+              <xAxis>
+                <CategoryAxis prefHeight="21.0" prefWidth="877.0" side="LEFT" startMargin="10.0">
+                     <tickLabelFont>
+                        <Font size="10.0" />
+                     </tickLabelFont></CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </VBox>
+      <HBox prefHeight="253.0" prefWidth="934.0">
+         <children>
+            <VBox prefHeight="253.0" prefWidth="496.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="113.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Loại Phòng">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PieChart fx:id="pieChartLoaiPhong" />
+               </children>
+            </VBox>
+            <VBox prefHeight="253.0" prefWidth="522.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="180.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Loại Khách Hàng">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <PieChart fx:id="pieChartLoaiKh" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/ThongKeBaoCao.css" />
+   </stylesheets>
+</VBox>

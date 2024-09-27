@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="650.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuanLyThanhToanController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="98.0" prefWidth="934.0" VBox.vgrow="NEVER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="364.0" spacing="10.0">
+               <children>
+                  <StackPane alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="326.0" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/avatar_user_1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <TableView fx:id="table" prefHeight="530.0" prefWidth="934.0">
+        <columns>
+          <TableColumn fx:id="maHDColumn" prefWidth="75.0" text="Mã hóa đơn" />
+          <TableColumn fx:id="hoTenColumn" prefWidth="75.0" text="Tên khách hàng" />
+            <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="sdtColumn" prefWidth="75.0" text="Số điện thoại" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/QuanLyThanhToan.css" />
+   </stylesheets>
+</VBox>

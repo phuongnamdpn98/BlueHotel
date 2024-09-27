@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="650.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="98.0" prefWidth="934.0" VBox.vgrow="NEVER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="364.0" spacing="10.0">
+               <children>
+                  <StackPane alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="326.0">
+                     <children>
+                        <TextField prefHeight="34.0" prefWidth="221.0" promptText="Search" styleClass="search-bar" />
+                        <ImageView fitHeight="24.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/magnifying-glass.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="10.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/avatar_user_1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/QuanLyThanhToan.css" />
+   </stylesheets>
+</VBox>

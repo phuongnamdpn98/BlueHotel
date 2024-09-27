@@ -1,0 +1,30 @@
+.root{
+	-fx-pref-width: 800px;
+	-fx-pref-height: 400px;
+}
+
+.btn-fill{
+	-fx-background-color: linear-gradient(to right, #30A5E8, #4659EB);
+	-fx-background-radius: 20px;
+	-fx-text-fill: #ffffff;
+}
+.btn-fill:pressed{
+	-fx-background-color: #4659EB;
+}
+.btn-empty{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 20px;
+	-fx-border-color: linear-gradient(to right, #30A5E8, #4659EB);
+	-fx-border-radius: 20px;
+	-fx-text-fill: linear-gradient(to right, #30A5E8, #4659EB);
+}
+.btn-empty:hover, .btn-fill:hover{
+	-fx-translate-y: -2px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0, 0, 1);
+}
+.btn-empty:pressed{
+	-fx-background-color: #4659EB;
+	-fx-border-color: rgba(0,0,0,0);
+	-fx-text-fill: #ffffff;
+	
+}

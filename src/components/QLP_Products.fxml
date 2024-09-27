@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="941.0" spacing="20.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToPhong" prefHeight="35.0" prefWidth="91.0" styleClass="btn-empty" text="Quay lại">
+               <graphic>
+                  <Group>
+                     <children>
+                        <SVGPath content="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="#4659eb" scaleX="0.04" scaleY="0.04" scaleZ="0.0" />
+                     </children>
+                  </Group>
+               </graphic>
+            </Button>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="containerProducts" hgap="10.0" vgap="30.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="5.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.columnIndex="1">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem1" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem1" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem1" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem1" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="244.0" layoutY="5.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.columnIndex="2">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem11" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem11" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem11" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem11" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="477.0" layoutY="5.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.columnIndex="3">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem111" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem111" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem111" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem111" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="710.0" layoutY="5.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem1111" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem1111" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem1111" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem1111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem1111" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem1111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="268.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem11111" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem11111" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem11111" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem11111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem11111" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem11111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="244.0" layoutY="268.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem111111" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem111111" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem111111" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem111111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem111111" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem111111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="477.0" layoutY="268.0" prefHeight="289.0" prefWidth="230.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/main.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="230.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="img_CardItem1111111" fitHeight="165.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/pepsi.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="name_CardItem1111111" text="Nước ngọt">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_CardItem1111111" text="12.000 VND">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="259.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="134.0" spacing="7.0" style="-fx-border-width: 1.5px; -fx-border-color: #cccccc; -fx-border-radius: 23px;">
+                           <children>
+                              <Button fx:id="btnMinus_CardItem1111111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="-" />
+                              <TextField fx:id="amount_CardItem1111111" alignment="CENTER" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #00000000;" text="0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnPlus_CardItem1111111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-circle" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="897.0">
+         <children>
+            <Button fx:id="btnThanhToanProducts" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" styleClass="btn-fill" text="Thanh toán" />
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" />
+   </padding>
+</VBox>
